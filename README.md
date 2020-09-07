@@ -47,8 +47,8 @@ Currently, Angel Assistant is designed and published as a Minimum Viable Product
 
 ## References
 
-https://www.nytimes.com/2017/04/17/well/the-cost-of-not-taking-your-medicine.html
-https://pubmed.ncbi.nlm.nih.gov/22964778/
+1. https://www.nytimes.com/2017/04/17/well/the-cost-of-not-taking-your-medicine.html
+2. https://pubmed.ncbi.nlm.nih.gov/22964778/
 
 ---
 
