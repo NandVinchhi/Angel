@@ -30,14 +30,22 @@ def receive_message():
                     recipient_id = message['sender']['id']
                     if message['message'].get('text'):
                         response_sent_text = get_message()
-                        if response_sent_text == "Hello":
-                            sendbt(recipient_id)
+                        print(message['message'].get('text'))
+                        if message['message'].get('text') == "Hello":
+                            print('here')
+                            send_message(recipient_id, "Hi, are you a doctor or a patient?")
+                        elif message['message'].get('text') == "Doctor":
+                            print('here')
+                            send_message(recipient_id, "Set")
+                        elif message['message'].get('text') == "Patient":
+                            print('here')
+                            send_message(recipient_id, "Set")
                         else:
                             send_message(recipient_id, response_sent_text)
                     # if user send us a GIF, photo, video or any other non-text item
                     if message['message'].get('attachments'):
                         response_sent_text = get_message()
-                        send_message(recipient_id, response_sent_text)
+                        #send_message(recipient_id, response_sent_text)
     return "Message Processed"
 
 
@@ -68,8 +76,8 @@ def sendbt(recipient_id):
     buttons.append(button)
     button = Button(title='Patient', type='text')
     buttons.append(button)
-    text = 'Select'
-    result = bot.send_button_message(recipient_id, text, buttons)
+    text = 'Select your role '
+    bot.send_button_message(recipient_id, text, buttons)
 
 # Add description here about this if statement.
 if __name__ == "__main__":
