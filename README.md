@@ -7,7 +7,7 @@
 
 # Angel Assistant
 
-Angel Assistant is an intelligent medication tracking experience powered by [Wit.ai](https://wit.ai/). This repository represents our submission for the [Devpost/Facebook Artificial Intelligence Hackathon](https://fbai2.devpost.com/).
+Angel is an intelligent medication tracking assistant powered by [Wit.ai](https://wit.ai/). This repository represents our submission for the [Devpost/Facebook Artificial Intelligence Hackathon](https://fbai2.devpost.com/).
 
 This project is live at https://robin.silentbyte.com/.
 
