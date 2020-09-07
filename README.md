@@ -5,9 +5,9 @@
 [![Status](https://img.shields.io/badge/status-live-00B20E.svg?style=for-the-badge)](https://robin.silentbyte.com)
 [![Donate](https://img.shields.io/badge/buy_me_a_coffee-donate-DFB217.svg?style=for-the-badge)](https://robin.silentbyte.com)
 
-# Robin
+# Angel Assistant
 
-Robin is a new AI experience powered by [Wit.ai](https://wit.ai/). This repository represents our submission for the [Devpost/Facebook Artificial Intelligence Hackathon](https://fbai2.devpost.com/).
+Angel Assistant is an intelligent medication tracking experience powered by [Wit.ai](https://wit.ai/). This repository represents our submission for the [Devpost/Facebook Artificial Intelligence Hackathon](https://fbai2.devpost.com/).
 
 This project is live at https://robin.silentbyte.com/.
 
