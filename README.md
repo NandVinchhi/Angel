@@ -7,25 +7,29 @@
 
 # Angel Assistant
 
-Angel is an intelligent medication tracking assistant powered by [Wit.ai](https://wit.ai/). This project was submitted to the [Facebook Artificial Intelligence Hackathon](https://fbai2.devpost.com/) and [Facebook Messaging Hackathon](https://fbai2.devpost.com/).
+Angel is an intelligent medication tracking assistant powered by [Wit.ai](https://wit.ai/). This project was submitted to the [Facebook Artificial Intelligence Hackathon](https://fbai3.devpost.com/) and [Facebook Messaging Hackathon](https://fbmessaging3.devpost.com/).
 
 Want to use Angel Assistant? Start a conversation by messaging at https://facebook.com/angelassistantai.
 
 Our project website is https://angelassistant.tech/.
 
-## Inspiration (Need to change)
+---
 
-Budgeting and personal finance is a challenge for many people, and a large percentage of the population lives paycheck-to-paycheck, having little to no savings. Extreme circumstances like the current Covid-19 pandemic affect the most vulnerable people the most.
+## Inspiration
 
-We have decided to leverage the power of Wit.ai to build an easy-to-use chat bot that assists people with budgeting and tracking expenses in an effort to empower people to stay on top of their finances and to put some fun into personal finance. Wit.ai supports a direct and natural way to interact with technology through language, making book-keeping easy and accessible.
+Keeping track of personal medications is challenging for many people. According to a review in Annals of Internal Medicine, “studies have shown that 20 percent to 30 percent of medication prescriptions are never filled, and that approximately 50 percent of medications for chronic disease are not taken as prescribed.” This lack of adherence is estimated to cause approximately 125,000 deaths and at least 10 percent of hospitalizations, and to cost the American health care system between $100 billion and $289 billion a year.
 
-## What it does (Need to change)
+Our team was determined to leverage the power of Wit.ai to build a well-designed and easy-to-use chatbot interface that assists people with remembering and keeping tracking of their medications, in an effort to encourage people to stay on top of their medications and remember to take them as prescribed. Angel Assistant supports a simple and accessible way for users to communicate via natural language and stay on top of their medications, which is possible through the cutting-edge infrastructure and technology of Wit.ai.
 
-Robin allows users to quickly set up a budget and keep track of expenses. Users can add expenses whenever they occur just by pulling out their phones and leaving a text or quick voice message. Robin is then able to do calculations on these expenses and tell the users how much of their weekly budget is left, when expenses have been incurred, what expenses have been incurred over what period of time, and so on.
+## What it does
 
-## How we built it (Need to change)
+Angel is an intelligent chatbot that allows users to quickly add, track, and remember their medications. Users can add medications via voice commands, specifying the name of the medicine, dosage, and times. They can update their status by leaving a quick voice or text message, after which Angel will give timely reminders. Lastly, Angel provides each patient with a unique ID, which they can then share with their doctors for them to monitor their patients’ progress, and send messages accordingly.
 
-Robin lives inside of a TypeScript Cloud Function and is hosted on Firebase. Incoming messages from Messenger and Telegram get forwarded to Robin for processing. Messages are analyzed based on the current state of the conversation (backed by a database and a state machine) and are then forwarded to Wit.ai, which returns a list of intents, entities, and traits (we have also implemented support for voice message and audio conversion). We then process those intents, entities, and traits, and match them against the current state of the conversation. Robin then produces a list of reply messages to be send back to the user and a list of actions to be carried out, along with the new state of the conversation that is then persisted in the database and loaded again once the next message for the particular user arrives.
+## How we built it
+
+Angel lives in a Python based cloud server hosted on Azure. We are using Flask for the cloud server and MongoDB Atlas for our database. We are using the Facebook developer infrastructure to integrate the Angel Assistant backend with Messenger for automated intelligent messaging.
+
+Incoming messages from Messenger get forwarded to the Angel backend server for processing. Messages are then sent to our Wit.ai application, which returns the intent, state and traits of the message, backed by the mongoDB database and our state machine. In this manner, we curate custom responses to the user based on their message, as well as update the database accordingly.
 
 ## Challenges we ran into (Need to change)
 
@@ -42,6 +46,13 @@ Sometimes things that seem simple on the surface turn out to be much more diffic
 ## What's next for Angel Assistant
 
 Currently, Angel Assistant is designed and published as a Minimum Viable Product. We would like to refine the functionality, taking into consideration feedback from users and experts in the healthcare field. A feature we would especially like to implement is support for finding and showing further information on various medications, as well as integrating with pharmacy systems for online purchases of medications.
+
+---
+
+## References
+
+1. https://www.nytimes.com/2017/04/17/well/the-cost-of-not-taking-your-medicine.html
+2. https://pubmed.ncbi.nlm.nih.gov/22964778/
 
 ---
 
