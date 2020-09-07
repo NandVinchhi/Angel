@@ -47,6 +47,12 @@ Currently, Robin is in MVP-status and the functionality needs to be refined a li
 
 ## Build Instructions
 
-1. Install [NodeJS](https://nodejs.org/) and [Firebase/CLI](https://firebase.google.com/) according to their official instructions.
+1. Set up your [Wit.ai](https://wit.ai/) and create [Messenger](https://developers.facebook.com/docs/messenger-platform/) bots to get your access keys.
 
-2. Set up your [Wit.ai](https://wit.ai/) and create [Telegram](https://core.telegram.org/bots) and [Messenger](https://developers.facebook.com/docs/messenger-platform/) bots to get your access keys.
+2. Install Python and Flask via pip, and and update the access keys for the bot.
+
+3. Start the ngrok server by running server.py.
+
+4. Test using messenger
+
+5. Alternatively, message https://facebook.com/angelassistantai to start chatting now!
