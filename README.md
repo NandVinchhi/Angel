@@ -1,2 +1,5 @@
+![Selfie2Anime](angel.png)
+
 # Angel
-Prescription chat bot for Facebook Hackathon AI
+
+An AI medical assistant helping you keep track of all your medications.
