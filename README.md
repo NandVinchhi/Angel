@@ -47,6 +47,13 @@ Currently, Angel Assistant is designed and published as a Minimum Viable Product
 
 ---
 
+## References
+
+https://www.nytimes.com/2017/04/17/well/the-cost-of-not-taking-your-medicine.html
+https://pubmed.ncbi.nlm.nih.gov/22964778/
+
+---
+
 ## Build Instructions
 
 1. Set up your [Wit.ai](https://wit.ai/) and create [Messenger](https://developers.facebook.com/docs/messenger-platform/) bots to get your access keys.
