@@ -13,6 +13,8 @@ Want to use Angel Assistant? Start a conversation by messaging at https://facebo
 
 Our project website is https://angelassistant.tech/.
 
+---
+
 ## Inspiration
 
 Keeping track of personal medications is challenging for many people. According to a review in Annals of Internal Medicine, “studies have shown that 20 percent to 30 percent of medication prescriptions are never filled, and that approximately 50 percent of medications for chronic disease are not taken as prescribed.” This lack of adherence is estimated to cause approximately 125,000 deaths and at least 10 percent of hospitalizations, and to cost the American health care system between $100 billion and $289 billion a year.
