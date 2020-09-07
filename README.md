@@ -39,7 +39,7 @@ We were proud to have created a well-designed and well-executed Minimum Viable P
 
 Sometimes things that seem simple on the surface turn out to be much more difficult when observed in detail. The first few Wit.ai intents were quickly implemented (e.g. tell_joke and greeting), but the more complicated ones such as add_expense quickly lead to a state explosion that required us to change our approach from a direct implementation of the logic to an indirect solution through a state machine. We also learned that it is a good idea to keep things more generic from the start in order to be able to support multiple back-ends (Messenger/Telegram) without excessive refactoring sessions.
 
-## What's next for Robin
+## What's next for Angel Assistant
 
 Currently, Angel Assistant is designed and published as a Minimum Viable Product. We would like to refine the functionality, taking into consideration feedback from users and experts in the healthcare field. A feature we'd particularly like to implement is support for sending pictures of receipts that will then be tracked by Robin. This would allow users to keep track of important expenses and come in handy for tax time.
 
