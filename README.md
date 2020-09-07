@@ -41,7 +41,9 @@ Sometimes things that seem simple on the surface turn out to be much more diffic
 
 ## What's next for Angel Assistant
 
-Currently, Angel Assistant is designed and published as a Minimum Viable Product. We would like to refine the functionality, taking into consideration feedback from users and experts in the healthcare field. A feature we'd particularly like to implement is support for sending pictures of receipts that will then be tracked by Robin. This would allow users to keep track of important expenses and come in handy for tax time.
+Currently, Angel Assistant is designed and published as a Minimum Viable Product. We would like to refine the functionality, taking into consideration feedback from users and experts in the healthcare field.
+
+<!-- A feature we'd particularly like to implement is support for sending pictures of receipts that will then be tracked by Robin. This would allow users to keep track of important expenses and come in handy for tax time. -->
 
 ---
 
