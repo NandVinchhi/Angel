@@ -33,7 +33,7 @@ As mentioned above, the implementation of a chat bot's logic can become very com
 
 ## Accomplishments that we're proud of
 
-We were able to set up an MVP of a chat bot that implements the functionality discussed above. The system works well supports both Messenger and Telegram, and can be extended to other chat clients trivially. We were also able to get voice support running through a custom audio convert solution.
+We were proud to have created a well-designed and well-executed Minimum Viable Prototype of an intelligent chat bot that successfully tracks medications, and implements various tracking features. The system integrates well with Messenger, and we strive to integrate it with other chat platforms as well in the future. Lastly, we are proud to have configured natural language interactions by enabling users to send custom voice messages.
 
 ## What we learned
 
@@ -41,7 +41,7 @@ Sometimes things that seem simple on the surface turn out to be much more diffic
 
 ## What's next for Robin
 
-Currently, Robin is in MVP-status and the functionality needs to be refined a little more. A feature we'd particularly like to implement is support for sending pictures of receipts that will then be tracked by Robin. This would allow users to keep track of important expenses and come in handy for tax time.
+Currently, Angel Assistant is designed and published as a Minimum Viable Product. We would like to refine the functionality, taking into consideration feedback from users and experts in the healthcare field. A feature we'd particularly like to implement is support for sending pictures of receipts that will then be tracked by Robin. This would allow users to keep track of important expenses and come in handy for tax time.
 
 ---
 
