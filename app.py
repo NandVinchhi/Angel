@@ -105,7 +105,9 @@ def delete_pres(name):
         return {"status":"failed"}
 
 
-print(delete_pres("crocin"))
-print(add_prescription("ng8ax9", "crocin", 7, 14, [1200], "2 pills"))
+#print(delete_pres("crocin"))
+#print(add_prescription("ng8ax9", "crocin", 7, 14, [1200], "2 pills"))
 
 #print(reset_pres("crocin"))
+
+#print(get_patient_data("x8ndmj"))
