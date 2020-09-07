@@ -2,7 +2,8 @@
 
 [![Robin](https://img.shields.io/badge/bot-angel-00B4FF.svg?style=for-the-badge)](https://robin.silentbyte.com)&nbsp;
 [![Status](https://img.shields.io/badge/status-live-00B20E.svg?style=for-the-badge)](https://robin.silentbyte.com)&nbsp;
-[![Donate](https://img.shields.io/badge/buy_me_coffee-donate-DFB217.svg?style=for-the-badge)](https://robin.silentbyte.com)
+
+<!-- [![Donate](https://img.shields.io/badge/buy_me_coffee-donate-DFB217.svg?style=for-the-badge)](https://robin.silentbyte.com) -->
 
 # Angel Assistant
 
