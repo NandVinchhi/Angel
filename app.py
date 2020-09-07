@@ -24,15 +24,21 @@ def generate_id():
 
     return final
 
-def register_patient(name, strictness, fbid):
+def register_patient(name, fbid):
     userid = generate_id()
-    k = {"name":name, "strictness":strictness, "fbid":fbid, "userid":userid}
+    k = {"name":name, "strictness":-1, "fbid":fbid, "userid":userid}
     try:
         db.users.insert_one(k)
         return {"status":"success", "userid":userid}
     except:
         return {"status":"failed"}
 
+def add_strictness(userid, strictness):
+    try:
+        db.users.update_one({"userid":userid}, {"$set":{"strictness":strictness}})
+        return {"status":"success"}
+    except:
+        return {"status":"failed"}
 def get_patient_data(userid):
     try:
         return JSONEncoder().encode(db.users.find_one({"userid":userid}))
@@ -50,13 +56,10 @@ def regenerate_id(userid):
     except:
         return {"status":"failed"}
 
-def add_prescription(userid, name, daily_count, num_days, times):
-    d = datetime.now().date()
-    date = d.day
-    month = d.month
-    year = d.year
+def add_prescription(userid, name, count, num_days, times, dosage):
+    d = str(datetime.now())
     pres_id = generate_id()
-    k = {"userid":userid, "pres_id":pres_id, "name":name, "daily_count":daily_count, "num_days":num_days, "times":times, "remaining":daily_count, "day":date, "month":month, "year":year}
+    k = {"userid":userid, "pres_id":pres_id, "name":name, "count":count, "dosage":dosage, "num_days":num_days, "times":times, "remaining":count, "timestamp":d}
     try:
         db.pres.insert_one(k)
         return {"status":"success", "pres_id":pres_id}
@@ -93,5 +96,16 @@ def reset_pres(name):
         return {"status":"success"}
     except:
         return {"status":"failed"}
+
+def delete_pres(name):
+    try:
+        db.pres.remove({"name":name})
+        return {"status":"success"}
+    except:
+        return {"status":"failed"}
+
+
+print(delete_pres("crocin"))
+print(add_prescription("ng8ax9", "crocin", 7, 14, [1200], "2 pills"))
 
 #print(reset_pres("crocin"))
