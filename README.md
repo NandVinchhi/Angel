@@ -1,7 +1,7 @@
 ![](angel.png)
 
-[![Robin](https://img.shields.io/badge/bot-angel-00B4FF.svg?style=for-the-badge)](https://robin.silentbyte.com)&nbsp;
-[![Status](https://img.shields.io/badge/status-live-00B20E.svg?style=for-the-badge)](https://robin.silentbyte.com)&nbsp;
+[![Robin](https://img.shields.io/badge/bot-angel-00B4FF.svg?style=for-the-badge)](https://angelassistant.tech)&nbsp;
+[![Status](https://img.shields.io/badge/status-live-00B20E.svg?style=for-the-badge)](https://angelassistant.tech)&nbsp;
 
 <!-- [![Donate](https://img.shields.io/badge/buy_me_coffee-donate-DFB217.svg?style=for-the-badge)](https://robin.silentbyte.com) -->
 
@@ -64,6 +64,6 @@ Currently, Angel Assistant is designed and published as a Minimum Viable Product
 
 3. Start the ngrok server by running server.py.
 
-4. Test using messenger
+4. Test using messenger.
 
 5. Alternatively, message https://facebook.com/angelassistantai to start chatting now!
