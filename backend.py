@@ -24,9 +24,9 @@ def generate_id():
 
     return final
 
-def register_patient(name, fbid):
+def register_patient(name, fbid, role):
     userid = generate_id()
-    k = {"name":name, "strictness":-1, "fbid":fbid, "userid":userid}
+    k = {"name":name, "strictness":-1, "fbid":fbid, "userid":userid, "role":role}
     try:
         db.users.insert_one(k)
         return {"status":"success", "userid":userid}
