@@ -104,6 +104,25 @@ def delete_pres(name):
     except:
         return {"status":"failed"}
 
+def get_notifications(time):
+    num_tot = 0
+
+    final = []
+    x = []
+    for i in db.pres.find():
+        final.append(i)
+    
+    for i in final:
+        
+        if i["times"][int(i["count"]/7) - int(i["remaining"]/7)] > time +  + (int(db.users.find_one({"userid":i["userid"]})["strictness"]) * 60):
+            x.append({"prescription_id":i["pres_id"], "userid":i["userid"]})
+            num_tot += 1
+    return {"number of responses":num_tot, "notifications":x}
+
+
+
+
+print(get_notifications(1000))
 
 #print(delete_pres("crocin"))
 #print(add_prescription("ng8ax9", "crocin", 7, 14, [1200], "2 pills"))
